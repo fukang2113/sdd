@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package aa.sd;
+
+option go_package="github.com/aa/aa/sd/grpc-go/stubs";
+
+
+service Asd {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
