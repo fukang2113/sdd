@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package   aa.aaa;
+package aa.aaa;
 
 option go_package="github.com/aa/aa/aaa/grpc-go/stubs";
 
