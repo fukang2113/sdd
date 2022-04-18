@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package ssd.sd;
+
+option go_package="github.com/fukang2113/sdd/ss/grpc-go/ssd/sd";
+
+
+service Ass {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
